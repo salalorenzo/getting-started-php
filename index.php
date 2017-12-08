@@ -12,5 +12,6 @@ $r->addQueryData(array('client_id' =>"$client_id".'&client_secret'=>"$client_sec
 } catch (HttpException $ex) {
     echo $ex;
 }*/
+echo("fatto");
 
 ?>
