@@ -1,4 +1,4 @@
-$<?
+<?
 <html>
 <head>
 <title>Pizzerie di Bergamo</title>
