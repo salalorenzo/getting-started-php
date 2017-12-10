@@ -26,9 +26,8 @@ for($k=0;$k<$quanti;$k++)
 		echo("<td>").$risposta->response->venues[$k]->location->lat.+"</td>";
 		echo("<td>").$risposta->response->venues[$k]->location->lng.+"</td>";
 		echo("</tr>");
-		echo("</table>");
 }
-
+echo("</table>");
 curl_close($ch);
 ?>
 
