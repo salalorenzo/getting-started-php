@@ -16,12 +16,12 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 curl_close($ch);
 
-$d=json_decode($json);
+$response=json_decode($json);
 echo("<table>");
 echo("<tr>");
-echo("<td>").$d->response->venues[0]->name.+"</td>";
-echo("<td>").$d->response->venues[1]->lat.+"</td>";
-echo("<td>").$d->response->venues[2]->lng.+"</td>";
+echo("<td>").$response->response->venues[0]->name.+"</td>";
+echo("<td>").$response->response->venues[1]->lat.+"</td>";
+echo("<td>").$response->response->venues[2]->lng.+"</td>";
 echo("</tr>");
 echo("</table>");
 ?>
