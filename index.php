@@ -10,9 +10,9 @@ $quanti=100;
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-$response = curl_exec($ch);
+$json = curl_exec($ch);
 
-$response=json_decode($json);
+$risposta=json_decode($json);
 echo("<table class='table'>");
 echo "<tr>";
 echo "<th>Nome</th>";
@@ -22,9 +22,9 @@ echo "</tr>";
 for($k=0;$k<$quanti;$k++)
 {
 		echo("<tr>");
-		echo("<td>").$response->response->venues[$k]->name.+"</td>";
-		echo("<td>").$response->response->venues[$k]->lat.+"</td>";
-		echo("<td>").$response->response->venues[$k]->lng.+"</td>";
+		echo("<td>").$risposta->response->venues[$k]->name.+"</td>";
+		echo("<td>").$risposta->response->venues[$k]->location->lat.+"</td>";
+		echo("<td>").$risposta->response->venues[$k]->location->lng.+"</td>";
 		echo("</tr>");
 		echo("</table>");
 }
@@ -35,4 +35,4 @@ curl_close($ch);
 </body>
 </link>
 </html>
-?>
+
