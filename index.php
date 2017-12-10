@@ -25,12 +25,12 @@ echo "<th>Nome</th>";
 echo "<th>Latitudine</th>";
 echo "<th>Longitudine</th>";
 echo "</tr>";
-for($k=0;$k<$quanti;$k++)
+for(k=0;k<$quanti;k++)
 {
 		echo("<tr>");
-		echo("<td>").$response->response->venues[$k]->name.+"</td>";
-		echo("<td>").$response->response->venues[$k]->lat.+"</td>";
-		echo("<td>").$response->response->venues[$k]->lng.+"</td>";
+		echo("<td>").$response->response->venues[k]->name.+"</td>";
+		echo("<td>").$response->response->venues[k]->lat.+"</td>";
+		echo("<td>").$response->response->venues[k]->lng.+"</td>";
 		echo("</tr>");
 		echo("</table>");
 }
