@@ -22,9 +22,9 @@ echo "</tr>";
 for($k=0;$k<30;$k++)
 {
 		echo("<tr>");
-		echo("<td>").$risposta->response->venues[$k]->name.echo("</td>");
-		echo("<td>").$risposta->response->venues[$k]->location->lat.echo("</td>");
-		echo("<td>").$risposta->response->venues[$k]->location->lng.echo("</td>");
+		echo("<td>").$risposta->response->venues[$k]->name."</td>";
+		echo("<td>").$risposta->response->venues[$k]->location->lat."</td>";
+		echo("<td>").$risposta->response->venues[$k]->location->lng."</td>";
 		echo("</tr>");
 }
 echo("</table>");
