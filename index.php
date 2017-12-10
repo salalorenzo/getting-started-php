@@ -13,7 +13,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
 $json = curl_exec($ch);
 
 $risposta=json_decode($json);
-echo("<table class='table'>");
+echo("<table>");
 echo "<tr>";
 echo "<th>Nome</th>";
 echo "<th>Latitudine</th>";
