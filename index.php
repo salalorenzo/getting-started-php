@@ -13,13 +13,13 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
 $json = curl_exec($ch);
 
 $risposta=json_decode($json);
-echo("<table>");
+echo("<table border='1px'>");
 echo "<tr>";
 echo "<th>Nome</th>";
 echo "<th>Latitudine</th>";
 echo "<th>Longitudine</th>";
 echo "</tr>";
-for($k=0;$k<count($risposta);$k++)
+for($k=0;$k<sizeof($risposta);$k++)
 {
 		echo("<tr>");
 		echo("<td>").$risposta->response->venues[$k]->name.+"</td>";
