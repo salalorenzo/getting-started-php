@@ -21,7 +21,7 @@ echo "<th>Longitudine</th>";
 echo "</tr>";
 for($k=0;k<50;$k++)
 {
-	if(($risposta->response->venues[$k]->name)!=NULL)
+	if(($risposta->response->venues[$k]->name)!='0')
 	{
 		echo("<tr>");
 		echo("<td>").$risposta->response->venues[$k]->name."</td>";
