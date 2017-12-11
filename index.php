@@ -21,7 +21,7 @@ echo "<th>Latitudine</th>";
 echo "<th>Longitudine</th>";
 echo "</tr>";
 if(count($risposta->response->venues)<$lim)
-	$lim=$risposta->response->venues;
+	$lim=count($risposta->response->venues);
 for($k=0;$k<$lim;$k++)
 {
 		echo("<tr>");
