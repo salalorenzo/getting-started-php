@@ -29,7 +29,7 @@ echo "</tr>";
 
 }*/
 	
-foreach ($risposta['name']['lat']['lng'] as $item) 
+foreach ($risposta as $item) 
 {
     		echo("<tr>");
 		echo("<td>").$item->response->venues[$k]->name."</td>";
