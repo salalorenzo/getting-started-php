@@ -29,6 +29,8 @@ for($k=0;$k<50;$k++)
 		echo("<td>").$risposta->response->venues[$k]->location->lng."</td>";
 		echo("</tr>");
 	}
+	else
+		$k++;
 }
 echo("</table>");
 curl_close($ch);
