@@ -19,15 +19,13 @@ echo "<th>Nome</th>";
 echo "<th>Latitudine</th>";
 echo "<th>Longitudine</th>";
 echo "</tr>";
-$k=0;
-foreach($risposta as $risposta)
+for($k=0;$k<30;$k++)
 {
 		echo("<tr>");
 		echo("<td>").$risposta->response->venues[$k]->name."</td>";
 		echo("<td>").$risposta->response->venues[$k]->location->lat."</td>";
 		echo("<td>").$risposta->response->venues[$k]->location->lng."</td>";
 		echo("</tr>");
-		$k++;
 }
 
 echo("</table>");
