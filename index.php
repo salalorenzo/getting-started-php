@@ -28,13 +28,13 @@ echo "</tr>";
 		echo("</tr>");
 
 }*/
-	
+
 foreach ($risposta as $item) 
 {
     		echo("<tr>");
-		echo("<td>").$item->response->venues[$k]->name."</td>";
-		echo("<td>").$item->response->venues[$k]->location->lat."</td>";
-		echo("<td>").$item->response->venues[$k]->location->lng."</td>";
+		echo("<td>").$item->response->venues->name."</td>";
+		echo("<td>").$item->response->venues->location->lat."</td>";
+		echo("<td>").$item->response->venues->location->lng."</td>";
 		echo("</tr>");
 }
 echo("</table>");
