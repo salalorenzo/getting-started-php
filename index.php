@@ -5,7 +5,7 @@
 </head>
 <body background class='background'>
 <?
-$url="https://api.foursquare.com/v2/venues/search?client_id=GCE5QLHTHPTXWBWRTEOPX0IDVF5XPQJXPHRFLOZZZW5DY51P&client_secret=Q3KYQNLRIR05WLGQHK2TGBOXDXZIGQA140DQ4KTIVWM4QNSH&near=Bergamo,IT&v=20161016&query=pizza";
+$url="https://api.foursquare.com/v2/venues/search?client_id=GCE5QLHTHPTXWBWRTEOPX0IDVF5XPQJXPHRFLOZZZW5DY51P&client_secret=Q3KYQNLRIR05WLGQHK2TGBOXDXZIGQA140DQ4KTIVWM4QNSH&near=Milano,IT&v=20161016&query=pizza";
 	
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
