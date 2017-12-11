@@ -19,26 +19,17 @@ echo "<th>Nome</th>";
 echo "<th>Latitudine</th>";
 echo "<th>Longitudine</th>";
 echo "</tr>";
-/*for($k=0;$k<30;$k++)
+$k=0;
+foreach($risposta as $risposta)
 {
 		echo("<tr>");
 		echo("<td>").$risposta->response->venues[$k]->name."</td>";
 		echo("<td>").$risposta->response->venues[$k]->location->lat."</td>";
 		echo("<td>").$risposta->response->venues[$k]->location->lng."</td>";
 		echo("</tr>");
-
-}*/
-$k=0;
-foreach ($risposta as $item) 
-{
-    		echo("<tr>");
-		echo("<td>").$item->response->venues[$k]->name."</td>";
-		echo("<td>").$item->response->venues[$k]->location->lat."</td>";
-		echo("<td>").$item->response->venues[$k]->location->lng."</td>";
-		echo("</tr>");
-	
 		$k++;
 }
+
 echo("</table>");
 curl_close($ch);
 
