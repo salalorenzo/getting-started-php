@@ -19,7 +19,7 @@ echo "<th>Nome</th>";
 echo "<th>Latitudine</th>";
 echo "<th>Longitudine</th>";
 echo "</tr>";
-for($k=0;$k<40;$k++)
+for($k=0;$k<count(venues);$k++)
 {
 		echo("<tr>");
 		echo("<td>").$risposta->response->venues[$k]->name."</td>";
