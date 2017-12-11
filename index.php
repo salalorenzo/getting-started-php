@@ -29,12 +29,12 @@ echo "</tr>";
 
 }*/
 	
-foreach ($risposta as $risposta) 
+foreach ($risposta['name']['lat']['lng'] as $item) 
 {
     		echo("<tr>");
-		echo("<td>").$risposta->response->venues[$k]->name."</td>";
-		echo("<td>").$risposta->response->venues[$k]->location->lat."</td>";
-		echo("<td>").$risposta->response->venues[$k]->location->lng."</td>";
+		echo("<td>").$item->response->venues[$k]->name."</td>";
+		echo("<td>").$item->response->venues[$k]->location->lat."</td>";
+		echo("<td>").$item->response->venues[$k]->location->lng."</td>";
 		echo("</tr>");
 }
 echo("</table>");
