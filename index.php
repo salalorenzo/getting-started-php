@@ -19,13 +19,16 @@ echo "<th>Nome</th>";
 echo "<th>Latitudine</th>";
 echo "<th>Longitudine</th>";
 echo "</tr>";
-for($k=0;$risposta->response->venues[$k]->name!=0;$k++)
+for($k=0;k<50;$k++)
 {
+	if(($risposta->response->venues[$k]->name)!=0)
+	{
 		echo("<tr>");
 		echo("<td>").$risposta->response->venues[$k]->name."</td>";
 		echo("<td>").$risposta->response->venues[$k]->location->lat."</td>";
 		echo("<td>").$risposta->response->venues[$k]->location->lng."</td>";
 		echo("</tr>");
+	}
 }
 echo("</table>");
 curl_close($ch);
